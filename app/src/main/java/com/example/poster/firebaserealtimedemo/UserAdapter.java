@@ -56,6 +56,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
             textName = (TextView) itemView.findViewById(R.id.text_age);
             textAge = (TextView) itemView.findViewById(R.id.text_age);
             textJob = (TextView) itemView.findViewById(R.id.text_age);
+            System.out.println("123123");
         }
     }
 }
