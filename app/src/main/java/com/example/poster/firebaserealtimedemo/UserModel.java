@@ -1,5 +1,8 @@
 package com.example.poster.firebaserealtimedemo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by POSTER on 25.05.2017.
  */
@@ -17,5 +20,15 @@ public class UserModel {
         this.job = job;
         this.age = age;
         this.key = key;
+    }
+
+    public Map<String, Object> toMap(){
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("firstName", firstName);
+        result.put("lastName", lastName);
+        result.put("job", job);
+        result.put("age", age);
+        result.put("key", key);
+        return result;
     }
 }
